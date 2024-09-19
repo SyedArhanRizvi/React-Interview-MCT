@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  height: 100vh;
+  width: 100vw;
+  background: rgb(176, 173, 173);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .card{
+  height: 60%;
+  width: 70%;
+  border-radius: 10px;
+  /* border: 1px solid black; */
+  display: flex;
+  background: rgb(197, 184, 159);
+}
+.main .card .formSide{
+  height: 100%;
+  width: 50%;
+  /* border: 2px solid rebeccapurple; */
+}
+.main .card .formSide form{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.main .card .formSide form div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  position: relative;
+}
+.main .card .formSide form div p{
+  position: absolute;
+  bottom: 1px;
+  left: 65px;
+  color: red;
+}
+.main .card .formSide form div input {
+  height: 4em;
+  width: 80%;
+  padding-left: 10px;
+  font-weight: bold;
+  color: black;
+  border-radius: 10px;
+  border: none;
+}
+.main .card .formSide form .btn {
+  height: 3em;
+  width: 80%;
+}
+.main .card .Photo{
+  height: 100%;
+  width: 50%;
+}
+.main .card .Photo img{
+  height: 100%;
+  width: 100%;
+}

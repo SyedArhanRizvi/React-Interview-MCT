@@ -70,12 +70,8 @@ src/
 ├── App.js         # Main React component with form logic
 ├── App.css        # Styles for the form
 └── index.js       # Main entry point for React application
-Author
-Your Name - Your GitHub
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+Author Name - Meer Syed Mohammad Arhan Rizvi Sabzwari..
 
-This README.md should give anyone looking at your project a complete overview of what it does, how to install it, and how to use it! You can adjust the details according to your preferences or project structure.
 
 
 

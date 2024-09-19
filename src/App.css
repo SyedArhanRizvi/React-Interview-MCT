@@ -3,29 +3,45 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
 .main {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background: rgb(176, 173, 173);
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
-.main .card{
-  height: 60%;
-  width: 70%;
+
+.main .card {
+  width: 90%;
+  max-width: 1000px;
   border-radius: 10px;
-  /* border: 1px solid black; */
   display: flex;
+  flex-direction: column;
   background: rgb(197, 184, 159);
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-.main .card .formSide{
-  height: 100%;
-  width: 50%;
-  /* border: 2px solid rebeccapurple; */
+
+.main .card .formSide {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.main .card .formSide form{
-  height: 100%;
+
+.main .card .formSide form {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -33,38 +49,72 @@
   align-items: center;
   gap: 15px;
 }
+
 .main .card .formSide form div {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  flex-wrap: wrap;
   position: relative;
 }
-.main .card .formSide form div p{
+
+.main .card .formSide form div p {
   position: absolute;
-  bottom: 1px;
-  left: 65px;
+  bottom: 5px;
+  left: 20px;
   color: red;
+  font-size: 0.8em;
 }
+
 .main .card .formSide form div input {
-  height: 4em;
-  width: 80%;
+  height: 3.5em;
+  width: 90%;
   padding-left: 10px;
   font-weight: bold;
   color: black;
   border-radius: 10px;
   border: none;
+  outline: none;
 }
+
 .main .card .formSide form .btn {
   height: 3em;
-  width: 80%;
+  width: 90%;
+  font-size: 1em;
+  border-radius: 10px;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
-.main .card .Photo{
-  height: 100%;
-  width: 50%;
+
+.main .card .formSide form .btn:hover {
+  background-color: #555;
 }
-.main .card .Photo img{
-  height: 100%;
-  width: 100%;
+
+.main .card .Photo {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .main .card {
+    flex-direction: row;
+  }
+
+  .main .card .formSide {
+    width: 50%;
+    padding: 40px;
+  }
+
+  .main .card .Photo {
+    display: block;
+    width: 50%;
+  }
+
+  .main .card .Photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 }
